@@ -1,12 +1,3 @@
-#
-# Copyright (C) 2025 by Codeflix-Bots@Github, < https://github.com/Codeflix-Bots >.
-#
-# This file is part of < https://github.com/Codeflix-Bots/FileStore > project,
-# and is released under the MIT License.
-# Please see < https://github.com/Codeflix-Bots/FileStore/blob/master/LICENSE >
-#
-# All rights reserved.
-
 from pyrogram import Client 
 from bot import Bot
 from config import *
@@ -39,26 +30,16 @@ async def cb_handler(client: Bot, query: CallbackQuery):
 
     elif data == "start":
         await query.message.edit_text(
-            text=START_MSG.format(first=query.from_user.first_name),
+            text=START_MSG.format(
+                first=query.from_user.first_name,
+                mention=query.from_user.mention
+            ),
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton("ʜᴇʟᴘ", callback_data='help'),
                  InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data='about')]
             ])
         )
-
-
-# Don't Remove Credit @CodeFlix_Bots, @rohit_1888
-# Ask Doubt on telegram @CodeflixSupport
-#
-# Copyright (C) 2025 by Codeflix-Bots@Github, < https://github.com/Codeflix-Bots >.
-#
-# This file is part of < https://github.com/Codeflix-Bots/FileStore > project,
-# and is released under the MIT License.
-# Please see < https://github.com/Codeflix-Bots/FileStore/blob/master/LICENSE >
-#
-# All rights reserved.
-#
 
 
     elif data == "premium":
@@ -75,7 +56,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 f"💰 {PRICE4}  For 3 Months Prime Membership\n\n"
                 f"💵 ASK UPI ID TO ADMIN AND PAY THERE -  <code>{UPI_ID}</code>\n\n\n"
                 f"♻️ After Payment You Will Get Instant Membership \n\n\n"
-                f"💷 https://cosmofeed.com/vig/690ba9feeba20b0013a37f0d \n\n\n"
+                f"💷 premiumuseronly@ibl \n\n\n"
                 f"‼️ Must Send Screenshot after payment & If anyone want custom time membrship then ask admin"
             ),
             reply_markup=InlineKeyboardMarkup(
@@ -89,7 +70,6 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 ]
             )
         )
-
 
 
     elif data == "close":
@@ -125,7 +105,6 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         await db.set_channel_mode(cid, mode)
         await query.answer(f"Force-Sub set to {'ON' if mode == 'on' else 'OFF'}")
 
-        # Refresh the same channel's mode view
         chat = await client.get_chat(cid)
         status = "🟢 ON" if mode == "on" else "🔴 OFF"
         new_mode = "off" if mode == "on" else "on"
