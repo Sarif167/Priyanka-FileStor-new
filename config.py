@@ -92,7 +92,7 @@ PRICE2 = os.environ.get("PRICE2", "39 💥RS💥")
 #0 Month
 PRICE3 = os.environ.get("PRICE3", "75 🍁RS🍁")
 #0 Month
-PRICE4 = os.environ.get("PRICE4", " 🌞RS🌞")
+PRICE4 = os.environ.get("PRICE4", "110 🌞RS🌞")
 #0 Month
 PRICE5 = os.environ.get("PRICE5", " 👀RS👀")
 
