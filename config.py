@@ -80,8 +80,8 @@ USER_REPLY_TEXT = "ʙᴀᴋᴋᴀ ! ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴍʏ ꜱᴇɴᴘ
 #==========================(BUY PREMIUM)====================#
 
 OWNER_TAG = os.environ.get("OWNER_TAG", "premiumuseronly_Bot")
-UPI_ID = os.environ.get("UPI_ID", "https://superprofile.bio/vig/690ba9feeba20b0013a37f0d")
-QR_PIC = os.environ.get("QR_PIC", "https://superprofile.bio/vig/690ba9feeba20b0013a37f0d")
+UPI_ID = os.environ.get("UPI_ID", "Q855940864@ybl")
+QR_PIC = os.environ.get("QR_PIC", "https://image.zaw-myo.workers.dev/image/bcff4a19-e9e4-4893-ac4e-5c63d1c4c448")
 SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", f"t.me/premiumuseronly_Bot")
 #--------------------------------------------
 #Time and its price
