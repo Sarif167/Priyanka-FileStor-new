@@ -2,7 +2,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-CHANNEL_ID = -1001234567890  # change
+CHANNEL_ID = -1002314687215  # change
 
 def setup_channel_post(app: Client):
 
