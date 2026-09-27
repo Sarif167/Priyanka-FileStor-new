@@ -12,7 +12,7 @@ APP_ID = int(os.environ.get("APP_ID", "23621595")) #Your API ID from my.telegram
 API_HASH = os.environ.get("API_HASH", "de904be2b4cd4efe2ea728ded17ca77d")
 #--------------------------------------------
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002547208138")) #Your db channel Id
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1004456364232")) #Your db channel Id
 OWNER = os.environ.get("OWNER", "BotMaster55") # Owner username without @
 OWNER_ID = int(os.environ.get("OWNER_ID", "1249672673")) # Owner id
 #--------------------------------------------
@@ -29,8 +29,8 @@ START_PIC = os.environ.get("START_PIC", "https://image.zaw-myo.workers.dev/image
 FORCE_PIC = os.environ.get("FORCE_PIC", "https://image.zaw-myo.workers.dev/image/aa898d7a-6403-49ba-9e9f-742511dd20df")
 
 #--------------------------------------------
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "adrinolinks.in")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "31b524ab1ff1a23bd97188b8135a3bca414b1535")
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 TUT_VID = os.environ.get("TUT_VID","https://t.me/Premium_Jaction/28")
 
